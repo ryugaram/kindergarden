@@ -12,6 +12,7 @@ import Input from "@material-ui/core/Input";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import GuKindergarden from "./GuKindergarden";
+import { DataGrid } from "@material-ui/data-grid";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -24,12 +25,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function DialogSelect() {
+export default function DialogSelect({ setData }) {
   const classes = useStyles();
   const [kindergarden, setKindergarden] = useState();
   const [open, setOpen] = React.useState(false);
   const [gu, setGu] = React.useState("");
-  const API_URL = `/api/notice/deductionSociety.do?key=6a148abff9f84168ab54e07b3a55b594&sidoCode=41&sggCode=${gu}`;
+  const API_URL = `/api/notice/basicInfo.do?key=6a148abff9f84168ab54e07b3a55b594&sidoCode=41&sggCode=${gu}`;
 
   useEffect(() => {
     axios
@@ -96,6 +97,7 @@ export default function DialogSelect() {
       </Dialog>
       {console.log(gu)}
       <GuKindergarden kindergarden={kindergarden} />
+      <DataGrid kindergarden={kindergarden} />
     </div>
   );
 }

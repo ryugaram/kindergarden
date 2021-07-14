@@ -1,18 +1,20 @@
 import "./App.css";
 import React from "react";
-import { CircularProgress } from "@material-ui/core";
-import SelectBoxTest from "./components/SelectBoxTest";
+import { CircularProgress, rgbToHex } from "@material-ui/core";
+import SelectBox from "./components/SelectBox";
 import UserAxios from "./components/UserAxios";
+import Container from "@material-ui/core/Container";
+import DataGrid from "./components/DataGrid";
 
 function App() {
   const { kindergarden } = UserAxios();
   if (!kindergarden) return <CircularProgress />;
 
   return (
-    <div className="App">
-      test
-      <SelectBoxTest />
-    </div>
+    <Container>
+      <SelectBox />
+      <DataGrid />
+    </Container>
   );
 }
 
