@@ -1,4 +1,4 @@
-import react, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const API_URL = `/api/notice//basicInfo.do?key=6a148abff9f84168ab54e07b3a55b594&sidoCode=41&sggCode=41133`;
@@ -22,7 +22,6 @@ const UserAxios = () => {
       .finally(function () {
         // ...
       });
-    console.log(kindergarden);
   }, []);
   return { kindergarden };
 };

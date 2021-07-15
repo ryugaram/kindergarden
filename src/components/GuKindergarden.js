@@ -6,7 +6,7 @@ const GuKindergarden = ({ kindergarden }) => {
   return (
     //
 
-    <div>ggg {console.log(kindergarden.data.kinderInfo)}</div>
+    <div> {console.log(kindergarden.data.kinderInfo)}</div>
   );
 };
 

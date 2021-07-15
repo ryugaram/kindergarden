@@ -12,7 +12,8 @@ import Input from "@material-ui/core/Input";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import GuKindergarden from "./GuKindergarden";
-import { DataGrid } from "@material-ui/data-grid";
+// import { DataGrid } from "@material-ui/data-grid";
+import DataGridTable from "./DataGridTable";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -88,16 +89,13 @@ export default function DialogSelect({ setData }) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
-            Cancel
-          </Button>
-          <Button onClick={handleClose} color="primary">
             Ok
           </Button>
         </DialogActions>
       </Dialog>
       {console.log(gu)}
       <GuKindergarden kindergarden={kindergarden} />
-      <DataGrid kindergarden={kindergarden} />
+      <DataGridTable kindergarden={kindergarden} />
     </div>
   );
 }
