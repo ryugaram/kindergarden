@@ -1,0 +1,76 @@
+building		건물현황
+
+	archyy :건축년도
+	floorcnt:건물층수
+	ldgprusarea:건물전용면적
+	grottar:대지 총면적
+
+classArea 	교실면적현황
+
+	crcnt:교실수
+	clsrarea:교실면적
+	phgrindrarea:체육장
+
+
+teachersInfo	직위 자격별 교직원
+
+	asps_thcnt:보직교사수
+	gnrl_thcnt:일반교사수
+	spcn_thcnt:특수교사수
+	ntcnt:보건교사수
+	shcnt_thcnt:기간제교사
+	rgth_gd1_qacnt : 정교사1급
+	rgth_gd2_qacnt : 정교사2급
+
+
+lessonDay	수업일수현황
+
+	mix_age_lsn_dcnt: 혼합연령 
+	if (mix_age_lsn_dcnt==='null')=>ag3_lsn_dcnt,ag4_lsn_dcnt,ag5_lsn_dcnt
+	afsc_pros_lsn_dcnt : 방과후과정수업일수
+
+
+schoolMeal	급식운영
+
+	
+	mlsr_oprn_way_tp_cd:운영방식
+	mlsr_kpcnt:급식원아수
+	ntrt_tchr_agmt_yn:영양교사배치여부
+
+
+schoolBus	통학차량
+
+
+	vhcl_oprn_yn: 차량운영여부
+	psg9_dclr_vhcnt": 9인승
+    	psg12_dclr_vhcnt": 12인승
+      	psg15_dclr_vhcnt":15인승
+
+
+yearOfWork	근속년수
+
+	yy1_undr_thcnt": 1년미만,
+      	yy1_abv_yy2_undr_thcnt" 1년이상 2년미만,
+     	yy2_abv_yy4_undr_thcnt": 2년이상 4년미만
+     	yy4_abv_yy6_undr_thcnt": 4년이상 6년미만
+      	yy6_abv_thcnt": 6년이상	
+	
+
+safetyEdu		안전점검
+
+	plyg_ck_yn: 놀이시설안전검사
+	cctv_ist_in: 실내 cctv
+	cctv_ist_out:실외 cctv
+	fire_avd_yn :소방대피훈련여부
+	fire_safe_yn:소방안전점검
+	gas_ck_yn :가스점검여부
+	elect_ck_yn:전기설비점검
+
+
+deductionSociety		공제회 가입
+
+
+	school_ds_en: 학교안전공제회 가입여부
+	educate_ds_en:교육시설재난공제회 가입여부
+
+

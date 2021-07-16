@@ -11,6 +11,7 @@ export default function DataGridTable({ kindergarden }) {
       width: 200,
       editable: true,
       sortable: false,
+      description: "정렬 불가능한 행입니다.",
     },
     {
       field: "설립연도",
@@ -38,6 +39,13 @@ export default function DataGridTable({ kindergarden }) {
       sortable: false,
       width: 300,
     },
+    {
+      field: "링크",
+      headerName: "링크",
+      width: 130,
+      editable: false,
+      sortable: false,
+    },
   ];
   if (!kindergarden) return <CircularProgress />;
 
@@ -52,6 +60,7 @@ export default function DataGridTable({ kindergarden }) {
       공립_사립: element.establish,
       운영시간: element.opertime,
       주소: element.addr,
+      링크: "자세히", //이 부분 수정 필요~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     });
   });
 

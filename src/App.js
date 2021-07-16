@@ -4,7 +4,7 @@ import { CircularProgress } from "@material-ui/core";
 import SelectBox from "./components/SelectBox";
 import UserAxios from "./components/UserAxios";
 import Container from "@material-ui/core/Container";
-// import DataGrid from "./components/DataGrid";
+import DaumMapTest from "./components/DaumMapTest";
 
 function App() {
   const { kindergarden } = UserAxios();
@@ -13,9 +13,11 @@ function App() {
   return (
     <Container>
       <SelectBox />
-      {/* <DataGrid /> */}
+      <DaumMapTest />
     </Container>
   );
 }
 
 export default App;
+
+//b57ee830b8117d0ab225e92b2d34667e

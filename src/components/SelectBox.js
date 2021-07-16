@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function DialogSelect({ setData }) {
+export default function DialogSelect() {
   const classes = useStyles();
   const [kindergarden, setKindergarden] = useState();
   const [open, setOpen] = React.useState(false);
