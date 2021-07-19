@@ -1,3 +1,25 @@
+basicInfo		기본정보
+
+	kindername:유치원이름
+	ldgrname:원장명
+	establish:설립유형
+	odate:개원일
+	telno:전화번호
+	hpaddr:홈페이지
+	opertime:운영시간
+	addr:주소
+	clcnt3 : 만3세학급수
+    clcnt4 : 만4세학급수
+    clcnt5 : 만5세학급수
+    mixclcnt : 혼합학급수
+    shclcnt : 특수학급수
+    ppcnt3 : 만3세원아수
+    ppcnt4 : 만4세원아수
+    ppcnt5 : 만5세원아수
+    mixppcnt : 혼합원아수
+    shppcnt : 특수원아수
+
+
 building		건물현황
 
 	archyy :건축년도
@@ -74,3 +96,4 @@ deductionSociety		공제회 가입
 	educate_ds_en:교육시설재난공제회 가입여부
 
 
+https://e-childschoolinfo.moe.go.kr/kinderMt/kinderSummary.do  참고

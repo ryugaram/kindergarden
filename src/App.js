@@ -5,6 +5,9 @@ import SelectBox from "./components/SelectBox";
 import UserAxios from "./components/UserAxios";
 import Container from "@material-ui/core/Container";
 import DaumMapTest from "./components/DaumMapTest";
+import DetailTable from "./components/DetailTable";
+import TableInTabs from "./components/TableInTabs";
+import KategorieTabs from "./components/KategorieTabs";
 
 function App() {
   const { kindergarden } = UserAxios();
@@ -12,12 +15,12 @@ function App() {
 
   return (
     <Container>
+      <KategorieTabs />
       <SelectBox />
-      <DaumMapTest />
+      <DetailTable />
+      <TableInTabs />
     </Container>
   );
 }
 
 export default App;
-
-//b57ee830b8117d0ab225e92b2d34667e

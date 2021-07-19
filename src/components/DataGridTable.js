@@ -8,7 +8,7 @@ export default function DataGridTable({ kindergarden }) {
     {
       field: "유치원",
       headerName: "유치원",
-      width: 200,
+      width: 220,
       editable: true,
       sortable: false,
       description: "정렬 불가능한 행입니다.",
@@ -42,7 +42,7 @@ export default function DataGridTable({ kindergarden }) {
     {
       field: "링크",
       headerName: "링크",
-      width: 130,
+      width: 110,
       editable: false,
       sortable: false,
     },
