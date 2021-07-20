@@ -32,6 +32,9 @@ classArea 	교실면적현황
 	crcnt:교실수
 	clsrarea:교실면적
 	phgrindrarea:체육장
+	hlsparea : 보건/위생공간
+    ktchmssparea : 조리실/급식공간
+    otsparea : 기타공간
 
 
 teachersInfo	직위 자격별 교직원
@@ -41,6 +44,7 @@ teachersInfo	직위 자격별 교직원
 	spcn_thcnt:특수교사수
 	ntcnt:보건교사수
 	shcnt_thcnt:기간제교사
+	
 	rgth_gd1_qacnt : 정교사1급
 	rgth_gd2_qacnt : 정교사2급
 
