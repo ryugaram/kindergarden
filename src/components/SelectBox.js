@@ -12,7 +12,7 @@ import Input from "@material-ui/core/Input";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import GuKindergarden from "./GuKindergarden";
-// import { DataGrid } from "@material-ui/data-grid";
+import { DataGrid } from "@material-ui/data-grid";
 import DataGridTable from "./DataGridTable";
 
 const useStyles = makeStyles((theme) => ({

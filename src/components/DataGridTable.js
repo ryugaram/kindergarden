@@ -4,7 +4,7 @@ import { CircularProgress } from "@material-ui/core";
 
 export default function DataGridTable({ kindergarden }) {
   const columns = [
-    { field: "id", headerName: "ID", width: 100 },
+    { field: "id", headerName: "ID", width: 50 },
     {
       field: "유치원",
       headerName: "유치원",
@@ -60,11 +60,15 @@ export default function DataGridTable({ kindergarden }) {
       공립_사립: element.establish,
       운영시간: element.opertime,
       주소: element.addr,
-      링크: "자세히", //이 부분 수정 필요~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      링크: "자세히",
     });
   });
 
-  console.log(myArray);
+  console.log(myArray[0]);
+
+  // myArray[0].링크.onClick = function () {
+  //   console.log("gg");
+  // };
 
   const rows = [...myArray];
 
