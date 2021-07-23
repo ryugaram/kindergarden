@@ -4,11 +4,11 @@ import { CircularProgress } from "@material-ui/core";
 
 export default function DataGridTable({ kindergarden }) {
   const columns = [
-    { field: "id", headerName: "ID", width: 50 },
+    { field: "id", headerName: "ID", width: 60 },
     {
       field: "유치원",
       headerName: "유치원",
-      width: 220,
+      width: 200,
       editable: true,
       sortable: false,
       description: "정렬 불가능한 행입니다.",
@@ -27,9 +27,15 @@ export default function DataGridTable({ kindergarden }) {
     },
 
     {
-      field: "운영시간",
-      headerName: "운영시간",
-      width: 150,
+      field: "등교시간",
+      headerName: "등교시간",
+      width: 110,
+      editable: true,
+    },
+    {
+      field: "하교시간",
+      headerName: "하교시간",
+      width: 110,
       editable: true,
     },
     {
@@ -52,23 +58,28 @@ export default function DataGridTable({ kindergarden }) {
   let myArray = new Array();
   console.log(kindergarden);
 
+  function goToSchool(time) {
+    return time.substring(0, 6);
+  }
+
+  function goToHome(time) {
+    return time.substring(7);
+  }
+
   kindergarden.data.kinderInfo.forEach((element) => {
     myArray.push({
       id: element.key,
       유치원: element.kindername,
       설립연도: element.odate,
       공립_사립: element.establish,
-      운영시간: element.opertime,
+      등교시간: goToSchool(element.opertime),
+      하교시간: goToHome(element.opertime),
       주소: element.addr,
       링크: "자세히",
     });
   });
 
   console.log(myArray[0]);
-
-  // myArray[0].링크.onClick = function () {
-  //   console.log("gg");
-  // };
 
   const rows = [...myArray];
 

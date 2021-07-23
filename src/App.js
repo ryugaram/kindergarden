@@ -4,12 +4,12 @@ import { CircularProgress } from "@material-ui/core";
 import SelectBox from "./components/SelectBox";
 import UserAxios from "./components/UserAxios";
 import Container from "@material-ui/core/Container";
-import DaumMapTest from "./components/DaumMapTest";
+import DaumMapTest from "./components/DaumMap";
 import DetailTable from "./components/DetailTable";
-import TableInTabsKindergardenBasicInfo from "./components/Tabs/TableInTabsKindergardenBasicInfo";
+import BasicInfo from "./components/Tabs/BasicInfo";
 import KategorieTabs from "./components/KategorieTabs";
-import TableInTabsKindergardenBuilding from "./components/Tabs/TableInTabsKindergardenBuilding";
-import TableInTabsKindergardenClassArea from "./components/Tabs/TableInTabsKindergardenClassArea";
+import Building from "./components/Tabs/Building";
+import ClassArea from "./components/Tabs/ClassArea";
 import Sample from "./components/Tabs/Sample";
 import TeacherCount from "./components/chart/TeacherCount";
 import TeacherLicense from "./components/chart/TeacherLicense";
@@ -23,12 +23,12 @@ function App() {
     <Container>
       {/* <KategorieTabs /> */}
       <SelectBox />
-      {/* <DetailTable /> */}
-      {/* <TableInTabsKindergardenBasicInfo /> */}
-      {/* <TableInTabsKindergardenBuilding /> */}
-      {/* <TableInTabsKindergardenClassArea /> */}
-      {/* <Sample /> */}
-      {/* <TeacherHowLongYears /> */}
+      {/* <DetailTable />
+      <BasicInfo />
+      <Building />
+      <ClassArea />
+      <Sample />
+      <TeacherHowLongYears /> */}
     </Container>
   );
 }

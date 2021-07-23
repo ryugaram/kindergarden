@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import DaumMapTest from "./DaumMapTest";
+import DaumMap from "./DaumMap";
 import { Table } from "reactstrap";
 
 const DetailTable = (props) => {
@@ -12,7 +12,7 @@ const DetailTable = (props) => {
             <th>유치원명</th>
             <td>100원</td>
             <td rowspan="7">
-              <DaumMapTest />
+              <DaumMap />
             </td>
           </tr>
           <tr align="center" bgcolor="white">
