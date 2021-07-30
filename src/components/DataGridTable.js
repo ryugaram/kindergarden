@@ -91,7 +91,7 @@ export default function DataGridTable({ kindergarden }) {
           onClick={(event) => {
             const id = params.row.id;
             const addr = addrFilterGu(params.row.주소);
-            console.log(params);
+            console.log(id, addr);
           }}
         >
           이동하기
