@@ -2,8 +2,21 @@ import * as React from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { CircularProgress } from "@material-ui/core";
 import { Button } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
+import { createHashHistory } from "history";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams,
+} from "react-router-dom";
+import UrlParamsTest from "./UrlParamsTest";
 
 export default function DataGridTable({ kindergarden }) {
+  const history = createHashHistory();
   if (!kindergarden) return <CircularProgress />;
 
   let myArray = new Array();
@@ -89,9 +102,9 @@ export default function DataGridTable({ kindergarden }) {
           size="small"
           style={{ marginLeft: 16 }}
           onClick={(event) => {
-            const id = params.row.id;
-            const addr = addrFilterGu(params.row.주소);
-            console.log(id, addr);
+            let id = params.row.id;
+            let addr = addrFilterGu(params.row.주소);
+            history.push(`/${addr}/${id}`);
           }}
         >
           이동하기

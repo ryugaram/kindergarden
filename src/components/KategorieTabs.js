@@ -16,7 +16,6 @@ import Box from "@material-ui/core/Box";
 import AssignmentOutlinedIcon from "@material-ui/icons/AssignmentOutlined";
 
 function TabPanel(props) {
-  let { id, juso } = useParams();
   const { children, value, index, ...other } = props;
 
   return (
