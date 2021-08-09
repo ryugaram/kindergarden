@@ -13,7 +13,6 @@ import {
   useRouteMatch,
   useParams,
 } from "react-router-dom";
-import UrlParamsTest from "./UrlParamsTest";
 
 export default function DataGridTable({ kindergarden }) {
   const history = createHashHistory();
@@ -104,7 +103,10 @@ export default function DataGridTable({ kindergarden }) {
           onClick={(event) => {
             let id = params.row.id;
             let addr = addrFilterGu(params.row.주소);
-            history.push(`/${addr}/${id}`);
+            const moveTo = () => {
+              history.replace(`/detail/${addr}/${id}`);
+            };
+            moveTo();
           }}
         >
           이동하기
