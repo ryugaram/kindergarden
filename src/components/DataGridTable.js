@@ -104,7 +104,7 @@ export default function DataGridTable({ kindergarden }) {
             let id = params.row.id;
             let addr = addrFilterGu(params.row.주소);
             const moveTo = () => {
-              history.replace(`/detail/${addr}/${id}`);
+              history.push(`/detail/${addr}/${id}`);
             };
             moveTo();
           }}
