@@ -1,7 +1,11 @@
 import React from "react";
 import { Table } from "reactstrap";
 
-const TableInTabsSchoolMeal = (props) => {
+const TableInTabsSchoolMeal = ({ schoolMeal }) => {
+  const mlsr_oprn_way_tp_cd = schoolMeal.mlsr_oprn_way_tp_cd;
+  const mlsr_kpcnt = schoolMeal.mlsr_kpcnt;
+  const ntrt_tchr_agmt_yn = schoolMeal.ntrt_tchr_agmt_yn;
+
   return (
     <Table bordered style={{ textAlign: "center" }}>
       <thead>
@@ -13,9 +17,9 @@ const TableInTabsSchoolMeal = (props) => {
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
+          <th scope="row">{mlsr_oprn_way_tp_cd}</th>
+          <td>{mlsr_kpcnt}</td>
+          <td>{ntrt_tchr_agmt_yn}</td>
         </tr>
       </tbody>
     </Table>

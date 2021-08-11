@@ -9,6 +9,8 @@ import TeacherCount from "../../components/chart/TeacherCount";
 import SchoolMeal from "../../components/Tabs/SchoolMeal";
 import SchoolBus from "../../components/Tabs/SchoolBus";
 import TeacherHowLongYears from "../../components/chart/TeacherHowLongYears";
+import TeacherLicense from "../../components/chart/TeacherLicense";
+import KategorieTabs from "../../components/KategorieTabs";
 
 const DetailPage = () => {
   // 파라미터로 구코드 추출
@@ -105,15 +107,17 @@ const DetailPage = () => {
   return (
     //w
     <Container>
-      <BasicInfo basicInfo={basicInfo} />
+      <KategorieTabs />
+      {/* <BasicInfo basicInfo={basicInfo} />
       <Building building={building} />
       <classArea classArea={classArea} />
       <TeacherCount teachersInfo={teachersInfo} />
-      {/* lessonDay  안함*/}
+      lessonDay  안함
       <SchoolMeal schoolMeal={schoolMeal} />
       <SchoolBus schoolBus={schoolBus} />
       <TeacherHowLongYears yearOfWork={yearOfWork} />
-      {/* 안전점검,공제회 안함 */}
+      <TeacherLicense teachersInfo={teachersInfo} />
+      안전점검,공제회 안함 */}
     </Container>
   );
 };
